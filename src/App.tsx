@@ -57,9 +57,9 @@ function LandingPage() {
 function MainApp() {
   return (
     <div className="container">
-      <h1>Welcome to Seal Example</h1>
-      <p>This is a basic example using React and Vite.</p>
-      <button onClick={() => alert('Hello from Seal!')}>Click Me</button>
+      <h1>Ikan Hiu Makan tomat</h1>
+      <p>Adalah $100 mat ??</p>
+      <button onClick={() => alert('Edited By AIRDROP MODE 🔥')}>Click Me</button>
     </div>
   );
 }
