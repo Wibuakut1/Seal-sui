@@ -58,7 +58,7 @@ function MainApp() {
   return (
     <div className="container">
       <h1>Ikan Hiu Makan tomat</h1>
-      <p>Adalah $100 mat ??</p>
+      <p>adakah seratus mat</p>
       <button onClick={() => alert('Edited By AIRDROP MODE 🔥')}>Click Me</button>
     </div>
   );
