@@ -1,13 +1,14 @@
-// Copyright (c), Mysten Labs, Inc.
-// SPDX-License-Identifier: Apache-2.0
+</Container>
+  );
+}
 
-import React from 'react';
+export default App;
+import React, { useState } from 'react';
 import { ConnectButton, useCurrentAccount } from '@mysten/dapp-kit';
 import { Box, Button, Card, Container, Flex, Grid } from '@radix-ui/themes';
 import { CreateAllowlist } from './CreateAllowlist';
 import { Allowlist } from './Allowlist';
 import WalrusUpload from './EncryptAndUpload';
-import { useState } from 'react';
 import { CreateService } from './CreateSubscriptionService';
 import FeedsToSubscribe from './SubscriptionView';
 import { Service } from './SubscriptionService';
@@ -57,15 +58,25 @@ function LandingPage() {
   );
 }
 
+function MainApp() {
+  return (
+    <div className="container">
+      <h1>Welcome to Seal Example</h1>
+      <p>This is a basic example using React and Vite.</p>
+      <button onClick={() => alert('Hello from Seal!')}>Click Me</button>
+    </div>
+  );
+}
+
 function App() {
   const currentAccount = useCurrentAccount();
   const [recipientAllowlist, setRecipientAllowlist] = useState<string>('');
   const [capId, setCapId] = useState<string>('');
+
   return (
     <Container>
       <Flex position="sticky" px="4" py="2" justify="between">
         <h1 className="text-4xl font-bold m-4 mb-8">Seal Example Apps</h1>
-        {/* <p>TODO: add seal logo</p> */}
         <Box>
           <ConnectButton />
         </Box>
@@ -155,8 +166,10 @@ function App() {
       ) : (
         <p>Please connect your wallet to continue</p>
       )}
+      <MainApp /> {/* Add the main app here */}
     </Container>
   );
 }
 
 export default App;
+    
