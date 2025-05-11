@@ -1,9 +1,5 @@
-</Container>
-  );
-}
+import React, { useState } from 'react'; // pastikan Anda mengimpor 'useState' dari React
 
-export default App;
-import React, { useState } from 'react';
 import { ConnectButton, useCurrentAccount } from '@mysten/dapp-kit';
 import { Box, Button, Card, Container, Flex, Grid } from '@radix-ui/themes';
 import { CreateAllowlist } from './CreateAllowlist';
@@ -172,4 +168,3 @@ function App() {
 }
 
 export default App;
-    
